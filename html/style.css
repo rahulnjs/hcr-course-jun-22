@@ -1,0 +1,64 @@
+/*External CSS*/ 
+body {
+    margin: 0px;
+    background-color: lightgoldenrodyellow;
+}
+
+#edu-details {
+    background-color: violet;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.parent {
+    height: 100vh; /*vertical height*/
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.box {
+    background-color: gray;
+    padding: 20px;
+    border-left: 5px solid #000;
+    border-right: 5px solid blue;
+    border-top: 5px solid yellowgreen;
+    border-bottom: 5px solid purple;
+    border-radius: 15px;
+    margin: 25px 0px;
+}
+
+
+
+
+/*
+.box-2 {
+    background-color: #48C9B0;
+}
+
+.box > div > div {
+    background-color: red;
+    color: #fff;
+}
+
+.box ~ .box-sibling {
+    color: gray;
+    float: right;
+    padding: 30px;
+    background-color: tomato;
+    width: 30%;
+}
+
+
+.left-a {
+    float: left;
+    padding: 30px;
+        background-color: yellow;
+        width: 30%;
+}*/
+/*
+inline => on the elements using style attribute
+internal => using style tag inside head
+external => load from different file
+*/
+
