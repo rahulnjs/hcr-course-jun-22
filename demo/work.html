@@ -8,9 +8,89 @@
 </head>
 <body>
 <script>
-//Your Javascript code goes here
 
-console.log("Hello JS")
+    var sum = 0;
+   for(var i = 1; i <= 0; i++) {
+        sum = sum + i;
+   }
+
+
+   var sumj = 0;
+    var j = 1;
+    while(j <= 0) {
+        sumj = sumj + j;
+        j++;
+    }   
+
+
+    var sumk = 0;
+    var k = 1;
+    do { //always runs at least once
+        sumk = sumk + k;
+        k++;
+    } while(i <= 0);
+
+
+    console.log(sum, sumj, sumk);
+
+/*
+   Pass 1:
+   i = 1;  i <= 5 ? (1 <= 5) = true 
+   sum = (sum + i) => 0 + 1 = 1;
+
+    Pass 2:
+    i = 2; i <= 5 ? (2 <= 5) = true
+    sum = (sum + i) => 1 + 2 = 3;
+
+    Pass 3:
+    i = 3; i <= 5 ? (3 <= 5) = true
+    sum = (sum + i) => 3 + 3 = 6;
+
+    Pass 4:
+    i = 4; i <= 5 ? (4 <= 5) = true
+    sum = (sum + i) => 6 + 4 = 10;
+
+    Pass 5:
+    i = 5; i <= 5 ? (5 <= 5) = true
+    sum = (sum + i) => 10 + 5 = 15;
+
+    Pass 6:
+    i = 6; i <= 5 ? (5 <= 5) = false
+*/
+
+
+
+
+
+
+
+
+
+</script>
+
+<script>
+    var friends = ["Pradeep", "Sachin", "Rahul"];
+
+    for(var i = 0; i < friends.length; i++) {
+        if(friends[i] === 'Rahul') {
+            console.log("Apple");
+        } else {
+            console.log(friends[i]);
+        }
+    }
+
+
+    var a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    var sum = 0;
+    for(var i = 0; i < a.length; i++) {
+        sum = sum + a[i];
+    }
+    
+    console.log('Average is', sum / a.length);
+
+
+
+
 
 </script>
 </body>
