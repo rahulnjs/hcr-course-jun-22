@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="template">
+        //JSON
+        //Javascript Object Notation
+        //Complex values
+
+        const todo = [
+            {
+                text: "do X", //Key-Value pair
+                status: false,
+                completedAt: 0,
+                completedBy: '',
+                moreComplex: {
+                    name: "",
+                    createdBy: ""
+
+                }
+            },
+            {
+                text: "do Y",
+                status: false,
+                completedAt: 0,
+                completedBy: ''
+            },
+            {
+                text: "do Z",
+                status: false,
+                completedAt: 0,
+                completedBy: ''
+            }
+        ];
+
+        todo[0].status = true;
+        todo[0].completedAt = new Date();
+        todo[0].completedBy = "Rahul";
+
+        console.log(todo)
+    </script>    
+    <script type="template">
+        const todo = [ //task array
+            "do x", //0
+            "do y", //1
+            "do z" //2
+        ];
+
+        const todoDoneOrNot = [ //status array
+            false, //0
+            false, //1
+            false //2
+        ];
+
+         const todoDoneTime = [ //status array
+                0, //0
+                0, //1
+                0 //2
+        ];
+
+         const todoUser = [ //status array
+                0, //0
+                0, //1
+                0 //2
+            ];
+
+
+        for(let i = 0; i < todo.length; i++) {
+            console.log(todo[i], todoDoneOrNot[i]);
+        }
+        console.clear()
+        todoDoneOrNot[1] = true;
+        todoDoneTime[1] = new Date();
+        todoUser[1] = "Sravani";
+
+        for (let i = 0; i < todo.length; i++) {
+            console.log(todo[i], todoDoneOrNot[i]);
+        }
+    console.clear()
+        todoDoneOrNot[0] = true;
+        todoDoneTime[0] = new Date();
+        todoUser[0] = "Rahul"
+
+        for (let i = 0; i < todo.length; i++) {
+                console.log(todo[i], todoDoneOrNot[i], todoDoneTime[i], todoUser[i]);
+            }
+    </script>
+
+<script>
+    const rahulsfbData = {
+        userInfo: {
+            fbId: "213456",
+            name: "Rahul",
+            dob: "12-Jun-8889",
+            email: "rsh@h.com",
+            profilePic: "https://simplifyr.dev/doc/rjql-logo.png"
+        },
+        friendList: [
+            {
+                fbId: "21345ddsds6",
+                name: "Sachin",
+                profilePic: "https:"
+            },
+            {
+                fbId: "21345ddsds6",
+                name: "Saurav",
+                profilePic: "https:"
+            },
+            {
+                fbId: "21345ddsds6",
+                name: "Rahul",
+                profilePic: "https:"
+            }, 
+            {
+                fbId: "21345ddsds6",
+                name: "Dhoni",
+                profilePic: "https:"
+            }
+        ],
+        posts: [
+            {
+                description: "",
+                image: "",
+                video: "",
+                likes: [
+                    {
+                       fbId: "21345ddsds6",
+                        name: "Sachin",
+                        profilePic: "https:" 
+                    },
+                     {
+                        fbId: "21345ddsds6",
+                        name: "Sachin",
+                        profilePic: "https:"
+                    }
+                ],
+                Comments: [
+                     {
+                        fbId: "21345ddsds6",
+                        name: "Sachin",
+                        profilePic: "https:",
+                        comment: "comemnt 1",
+                        reactions: [
+
+                        ],
+                        replies: [
+                            {
+                                 fbId: "21345ddsds6",
+                                name: "Sachin",
+                                profilePic: "https:",
+                                comment: "ds,gdjshgjklsdnds",
+                            }
+                        ]
+                    },
+                     {
+                        fbId: "21345ddsds6",
+                        name: "Sachin",
+                        profilePic: "https:",
+                        comment: "comment 2"
+                    },
+                     {
+                        fbId: "21345ddsds6",
+                        name: "Sachin",
+                        profilePic: "https:",
+                        comment: "comment 3"
+                    }
+                ]
+            }
+        ]
+    };
+
+    //get me the name of the friends
+    const friends = [];
+    for(let i = 0; i < rahulsfbData.friendList.length; i++) {
+        const frnd = rahulsfbData.friendList[i];
+       friends.push(frnd.name);
+    }
+
+    rahulsfbData.posts[0].Comments[0].comment
+
+    console.log(rahulsfbData.posts[0].Comments[0].comment)
+    //traversing 
+</script>
+</body>
+</html>
